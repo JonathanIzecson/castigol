@@ -1,7 +1,7 @@
 <template>
     <div>
         <form @submit.prevent="initSession">
-            <input type="text" v-model="form.email" placeholder="Email..."/> <br/>
+            <input type="text" v-model="form.login" placeholder="Username or Email..."/> <br/>
             <input type="password" v-model="form.password" placeholder="Password..."/> <br/>
             <button type="submit">Iniciar sesion</button>
         </form>
@@ -15,7 +15,7 @@ export default {
     data(){
         return {
             form: {
-                email: 'jonathanemmanuel.2292@gmail.com',
+                login: 'jonathanemmanuel.2292@gmail.com',
                 password: 'password'
             },
         }
