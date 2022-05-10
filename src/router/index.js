@@ -34,10 +34,10 @@ const router = createRouter({
 router.beforeEach(async (to, from) => {
   await store.dispatch('getUser');
   if (to.meta.requiresAuth && !store.state.auth) {
-    return { path: '/login' };
+    router.push('/login');
   }
   if(to.meta.hideForAuth && store.state.auth){
-    return{ path: '/' };
+    router.push('/');
   }
 })
 
