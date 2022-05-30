@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import store from '../store';
 import Home from '../views/Home.vue';
-import Login from '../views/Login';
+const Login = () => import('../views/Login.vue');
 
 const routes = [
   {
@@ -17,14 +17,6 @@ const routes = [
       hideForAuth: true,
     },
   },
-  {
-    path: '/about',
-    name: 'About',
-    component: () => import('../views/About.vue'),
-    meta: {
-      requiresAuth: true,
-    },
-  }
 ]
 
 const router = createRouter({
