@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import store from '../store';
 import Home from '../views/Home.vue';
 const Login = () => import('../views/Login.vue');
+const Register = () => import('../views/auth/Register.vue');
 
 const routes = [
   {
@@ -17,6 +18,14 @@ const routes = [
       hideForAuth: true,
     },
   },
+  {
+    path: '/register',
+    name: 'Register',
+    component: Register,
+    meta: {
+      hideForAuth: true
+    }
+  }
 ]
 
 const router = createRouter({

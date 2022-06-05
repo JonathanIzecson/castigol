@@ -25,7 +25,7 @@
                         <router-link to="/login" class="text-white text-center border border-white rounded-md py-2.5 px-5 hover:bg-white
                         hover:text-gray-800 transition duration-500 ease-in-out lg:mr-4 mb-4 lg:mb-0"> Iniciar Sesion
                         </router-link>
-                        <router-link to="#" class="text-white text-center bg-blue-500 border border-blue-500 rounded-md py-2.5 px-5
+                        <router-link to="/register" class="text-white text-center bg-blue-500 border border-blue-500 rounded-md py-2.5 px-5
                         hover:bg-blue-600 hover:border-blue-600 transition duration-500 ease-in-out"> Regístrate
                         </router-link>
                     </div>
